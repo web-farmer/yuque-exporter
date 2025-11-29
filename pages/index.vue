@@ -69,11 +69,10 @@
 import { Download } from '@element-plus/icons-vue'
 import { ElMessage } from 'element-plus'
 import { onBeforeMount, ref } from 'vue'
-import pkg from 'file-saver'
-import { AxiosResponse } from 'axios'
+import { saveAs } from 'file-saver'
+import type { AxiosResponse } from 'axios'
 import request from '~/plugin/request.app'
-import { IBook, IBookCatalog } from '~/types'
-const saveAs: any = pkg.saveAs
+import type { IBook, IBookCatalog } from '~/types'
 
 // 当前知识库路径
 const namespace = ref<string>('')

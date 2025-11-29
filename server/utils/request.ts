@@ -3,7 +3,7 @@
  * @Date: 2022/5/16 21:29
  * @Description: request.ts.js
  */
-import axios, { AxiosRequestConfig, AxiosResponse } from 'axios'
+import axios, { type AxiosRequestConfig, type AxiosResponse } from 'axios'
 
 const config: any = {
     baseURL: 'https://www.yuque.com/api/v2/'

@@ -4,7 +4,7 @@
  * @Description: request.ts.js
  */
 
-import axios, { AxiosRequestConfig, AxiosResponse } from 'axios'
+import axios, { type AxiosRequestConfig, type AxiosResponse } from 'axios'
 import { ElMessage } from 'element-plus'
 const pre = import.meta.env.MODE === 'development' ? '/' : '/'
 const config: any = {

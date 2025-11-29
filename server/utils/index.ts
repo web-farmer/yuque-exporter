@@ -3,10 +3,9 @@
  * @Date: 2023/3/29 09:10
  * @Description: utils.js
  */
-import { RequestHeaders } from 'h3'
-import { AxiosResponse } from 'axios'
+import type { RequestHeaders } from 'h3'
 import JSZip from 'jszip'
-import { IBookCatalog, IDocMap } from '~/types'
+import type { IBookCatalog, IDocMap } from '~/types'
 import request from '~/server/utils/request'
 // 文档库路径/语雀中用到
 
