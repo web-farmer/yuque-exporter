@@ -3,12 +3,12 @@
  * @Date: 2023/3/14 20:24
  * @Description: export.ts
  */
-import { defineEventHandler, getHeaders, getQuery, RequestHeaders, sendStream } from 'h3'
+import { defineEventHandler, getHeaders, getQuery, type RequestHeaders, sendStream } from 'h3'
 import yaml from 'yaml'
 import dayjs from 'dayjs'
 import request from '../utils/request'
 import { getDocsBody, getDocsZip, listTransferTree } from '~/server/utils'
-import { IBookCatalog } from '~/types'
+import type { IBookCatalog } from '~/types'
 
 /**
  * @desc 获取知识库所有文档
@@ -66,7 +66,7 @@ export default defineEventHandler(async event => {
             const fileName = encodeURIComponent(`${repoName}.${dayjs().format('YYYY.MM.DD')}.zip`)
             // 添加响应头，文件名信息
             event.node.res.setHeader('Content-Disposition', `attachment; filename="${fileName}"`)
-            return sendStream(event, content)
+            return sendStream(event, content as any)
         }
     } catch (e: any) {
         return {

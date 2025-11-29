@@ -3,6 +3,7 @@
  * @Date: 2022/5/16 21:29
  * @Description: request.ts.js
  */
+/// <reference types="vite/client" />
 
 import axios, { type AxiosRequestConfig, type AxiosResponse } from 'axios'
 import { ElMessage } from 'element-plus'

@@ -35,6 +35,7 @@
 </template>
 
 <script lang="ts" setup>
+/// <reference types="vite/client" />
 import { useRouter } from 'nuxt/app'
 import { reactive } from 'vue'
 import { ElMessage } from 'element-plus'

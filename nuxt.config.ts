@@ -1,5 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+// @ts-expect-error: types not resolving correctly
 import eslint from 'vite-plugin-eslint'
+import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
     typescript: {
@@ -12,6 +14,7 @@ export default defineNuxtConfig({
     vite: {
         plugins: [eslint()]
     },
+    // @ts-expect-error: types not resolving correctly
     elementPlus: {
         icon: 'ElIcon',
         importStyle: 'scss',

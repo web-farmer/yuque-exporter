@@ -7,7 +7,7 @@ import { defineEventHandler, getHeaders, getQuery } from 'h3'
 import yaml from 'yaml'
 import { listTransferTree } from '../utils'
 import request from '../utils/request'
-import { IBookCatalog, IBookDetail } from '~/types'
+import type { IBookCatalog, IBookDetail } from '~/types'
 
 export default defineEventHandler(async event => {
     try {

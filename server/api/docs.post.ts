@@ -19,7 +19,7 @@ export default defineEventHandler(async event => {
         const fileName = encodeURIComponent(`${title}.${dayjs().format('YYYY.MM.DD')}.zip`)
         // 添加响应头，文件名信息
         event.node.res.setHeader('Content-Disposition', `attachment; filename="${fileName}"`)
-        return sendStream(event, content)
+        return sendStream(event, content as any)
     } catch (e: any) {
         // 添加响应头
         event.node.res.setHeader('Content-Type', `application/json`)
