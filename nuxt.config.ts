@@ -29,11 +29,11 @@ export default defineNuxtConfig({
                 { name: 'viewport', content: 'width=device-width, initial-scale=1' },
                 {
                     name: 'description',
-                    content: '语雀，语雀文档导出，语雀文档批量导出，语雀批量导出，wforguo，forguo'
+                    content: '语雀，语雀文档导出，语雀文档批量导出，语雀批量导出，wwei，wei'
                 },
                 {
                     name: 'keywords',
-                    content: '语雀|语雀文档导出|语雀文档批量导出|语雀批量导出|wforguo|forguo'
+                    content: '语雀|语雀文档导出|语雀文档批量导出|语雀批量导出|wwei|wei'
                 }
             ],
             script: [

@@ -1584,7 +1584,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
       }, _parent));
       _push(ssrRenderComponent(_component_el_link, {
         type: "primary",
-        href: "https://github.com/wforguo/yuque-exporter/blob/master/README.md",
+        href: "https://github.com/wwei/yuque-exporter/blob/master/README.md",
         target: "_blank"
       }, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {

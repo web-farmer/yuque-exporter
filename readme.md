@@ -2,14 +2,12 @@
 
 > 语雀文档批量导出
 
-[![Docker Deploy](https://github.com/wforguo/yuque-exporter/actions/workflows/docker-image-hub.yml/badge.svg)](https://github.com/wforguo/yuque-exporter/actions/workflows/docker-image-hub.yml)
+[![Docker Deploy](https://github.com/web-farmer/yuque-exporter/actions/workflows/docker-image-hub.yml/badge.svg)](https://github.com/web-farmer/yuque-exporter/actions/workflows/docker-image-hub.yml)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen?logo=github)](http://commitizen.github.io/cz-cli/)
 
 [快速访问](https://yuque-exporter.vercel.app)
 
-[Github](https://github.com/wforguo/yuque-exporter)
-
-[Blog](https://github.com/wforguo/forguo.cn)
+[Github](https://github.com/web-farmer/yuque-exporter)
 
 ## 项目由来
 
@@ -78,7 +76,7 @@ pnpm run dev
 
 列：获取知识列表
 
-[https://www.yuque.com/api/v2/users/你的用户名/repos/](https://www.yuque.com/api/v2/users/forguo/repos/)
+[https://www.yuque.com/api/v2/users/你的用户名/repos/](https://www.yuque.com/api/v2/users/wei/repos/)
 
 ## nuxt3踩坑
 
@@ -132,4 +130,4 @@ vue-router找不到
 
 Thanks
 
-[Github](https://github.com/wforguo/yuque-exporter)
+[Github](https://github.com/web-farmer/yuque-exporter)

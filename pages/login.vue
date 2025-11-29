@@ -1,6 +1,6 @@
 <!--
  * @Name: home.vue
- * @Author: forguo
+ * @Author: wei
  * @Date: 2023/3/14 13:59
  * @Description: home
 -->
@@ -24,7 +24,7 @@
                 </el-form-item>
             </el-form>
         </el-card>
-        <el-link type="primary" href="https://github.com/wforguo/yuque-exporter/blob/master/README.md" target="_blank">
+        <el-link type="primary" href="https://github.com/web-farmer/yuque-exporter/blob/master/README.md" target="_blank">
             GitHub/帮助文档
         </el-link>
     </div>

@@ -4,7 +4,7 @@
             <div style="display: flex; align-items: center">
                 <span>语雀批量导出</span>
                 <a
-                    href="https://github.com/wforguo/yuque-exporter"
+                    href="https://github.com/web-farmer/yuque-exporter"
                     title="GitHub"
                     target="_blank"
                     class="iconfont icon-github"

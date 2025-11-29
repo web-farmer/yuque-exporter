@@ -8,10 +8,10 @@ echo -e "---------删除本地容器和镜像--------"
 # 删除本地容器
 docker rm yuque-app
 # 删除本地镜像
-docker rmi forguo/yuque:latest
+docker rmi web-farmer/yuque:latest
 echo -e "---------拉取镜像--------"
 # 拉取镜像
-docker pull forguo/yuque:latest
+docker pull web-farmer/yuque:latest
 
 echo -e "---------创建容器并运行容器--------"
 # -rm: docker会在容器退出时删除与它关联的数据卷
@@ -19,5 +19,5 @@ echo -e "---------创建容器并运行容器--------"
 # -p: 端口映射，本机端口:容器端口
 # --name: 指定容器名称
 # 最后一个为镜像名称
-docker run --rm -d -p 3000:3000 --name yuque-app forguo/yuque:latest
+docker run --rm -d -p 3000:3000 --name yuque-app web-farmer/yuque:latest
 echo -e "---------运行成功--------"

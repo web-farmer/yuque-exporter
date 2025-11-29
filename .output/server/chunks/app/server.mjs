@@ -2432,7 +2432,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
               _push2(ssrRenderComponent(_component_el_header, null, {
                 default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                   if (_push3) {
-                    _push3(`<div style="${ssrRenderStyle({ "display": "flex", "align-items": "center" })}" data-v-ee6f7632${_scopeId2}><span data-v-ee6f7632${_scopeId2}>语雀批量导出</span><a href="https://github.com/wforguo/yuque-exporter" title="GitHub" target="_blank" class="iconfont icon-github" data-v-ee6f7632${_scopeId2}></a></div>`);
+                    _push3(`<div style="${ssrRenderStyle({ "display": "flex", "align-items": "center" })}" data-v-ee6f7632${_scopeId2}><span data-v-ee6f7632${_scopeId2}>语雀批量导出</span><a href="https://github.com/wwei/yuque-exporter" title="GitHub" target="_blank" class="iconfont icon-github" data-v-ee6f7632${_scopeId2}></a></div>`);
                     if (unref(route).name !== "login") {
                       _push3(ssrRenderComponent(_component_el_button, {
                         type: "warning",
@@ -2458,7 +2458,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
                       createVNode("div", { style: { "display": "flex", "align-items": "center" } }, [
                         createVNode("span", null, "语雀批量导出"),
                         createVNode("a", {
-                          href: "https://github.com/wforguo/yuque-exporter",
+                          href: "https://github.com/wwei/yuque-exporter",
                           title: "GitHub",
                           target: "_blank",
                           class: "iconfont icon-github"
@@ -2506,7 +2506,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
                   createVNode("div", { style: { "display": "flex", "align-items": "center" } }, [
                     createVNode("span", null, "语雀批量导出"),
                     createVNode("a", {
-                      href: "https://github.com/wforguo/yuque-exporter",
+                      href: "https://github.com/wwei/yuque-exporter",
                       title: "GitHub",
                       target: "_blank",
                       class: "iconfont icon-github"
