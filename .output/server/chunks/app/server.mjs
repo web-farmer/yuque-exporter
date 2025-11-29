@@ -277,7 +277,7 @@ function useHead(input, options = {}) {
     return isBrowser ? clientUseHead(input, options) : serverUseHead(input, options);
   }
 }
-const appHead = { "meta": [{ "charset": "utf-8" }, { "name": "author", "content": "forguo, wforguo" }, { "name": "baidu-site-verification", "content": "code-bakUos2v8l" }, { "name": "google-site-verification", "content": "9aVJNYlDCl0rCI1akpdSqg9Xwr47KJrVWSXktSsfwKE" }, { "name": "viewport", "content": "width=device-width, initial-scale=1" }, { "name": "description", "content": "语雀，语雀文档导出，语雀文档批量导出，语雀批量导出，wforguo，forguo" }, { "name": "keywords", "content": "语雀|语雀文档导出|语雀文档批量导出|语雀批量导出|wforguo|forguo" }], "link": [], "style": [], "script": [{ "src": "https://hm.baidu.com/hm.js?2788f1f4f01e060d6d892f4bbd5b74d4" }], "noscript": [], "charset": "utf-8", "viewport": "width=device-width, initial-scale=1", "title": "语雀导出" };
+const appHead = { "meta": [{ "charset": "utf-8" },{ "name": "viewport", "content": "width=device-width, initial-scale=1" }, { "name": "description", "content": "语雀，语雀文档导出，语雀文档批量导出，语雀批量导出" }, { "name": "keywords", "content": "语雀|语雀文档导出|语雀文档批量导出|语雀批量导出" }], "link": [], "style": [], "script": [{ "src": "https://hm.baidu.com/hm.js?e2b1313ceb93a9a3428404181b004fc1" }], "noscript": [], "charset": "utf-8", "viewport": "width=device-width, initial-scale=1", "title": "语雀导出" };
 const appPageTransition = false;
 const appKeepalive = false;
 const unhead_dGwCAq3sFY = /* @__PURE__ */ defineNuxtPlugin((nuxtApp) => {
