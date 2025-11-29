@@ -2,7 +2,6 @@
 
 > 语雀文档批量导出
 
-[![Docker Deploy](https://github.com/web-farmer/yuque-exporter/actions/workflows/docker-image-hub.yml/badge.svg)](https://github.com/web-farmer/yuque-exporter/actions/workflows/docker-image-hub.yml)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen?logo=github)](http://commitizen.github.io/cz-cli/)
 
 [快速访问](https://yuque-exporter.vercel.app)
