@@ -26,9 +26,6 @@ export default defineNuxtConfig({
             title: '语雀导出',
             meta: [
                 { charset: 'utf-8' },
-                { name: 'author', content: 'forguo, wforguo' },
-                { name: 'baidu-site-verification', content: 'code-bakUos2v8l' },
-                { name: 'google-site-verification', content: '9aVJNYlDCl0rCI1akpdSqg9Xwr47KJrVWSXktSsfwKE' },
                 { name: 'viewport', content: 'width=device-width, initial-scale=1' },
                 {
                     name: 'description',
@@ -41,7 +38,7 @@ export default defineNuxtConfig({
             ],
             script: [
                 {
-                    src: 'https://hm.baidu.com/hm.js?2788f1f4f01e060d6d892f4bbd5b74d4'
+                    src: 'https://hm.baidu.com/hm.js?e2b1313ceb93a9a3428404181b004fc1'
                 }
             ]
         }
