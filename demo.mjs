@@ -4,8 +4,8 @@
  * @Description: demo.js
  */
 
-import {remark} from 'remark'
-import {selectAll} from 'unist-util-select';
+import { remark } from 'remark'
+import { selectAll } from 'unist-util-select'
 
 function replaceHTML() {
     return tree => {
@@ -18,14 +18,16 @@ function replaceHTML() {
             // 替换原有cdn地址为本地地址
             node.url = `${fileName[1]}`
         }
-    };
+    }
 }
 
 async function main() {
     const file = await remark()
         .data('settings', { bullet: '-', listItemIndent: 'one' })
         .use([replaceHTML])
-        .process('# Hi\n\n## Table of contents\n\n## Hello\n\n*Some* ~more~ _things_.\n\n- 1\n- 2\n\n![yuque](https://cdn.yuque/image.png)\n\n<a name="jpRNc"></a>')
+        .process(
+            '# Hi\n\n## Table of contents\n\n## Hello\n\n*Some* ~more~ _things_.\n\n- 1\n- 2\n\n![yuque](https://cdn.yuque/image.png)\n\n<a name="jpRNc"></a>'
+        )
     console.error(String(file))
 }
 

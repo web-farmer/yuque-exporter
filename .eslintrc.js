@@ -14,6 +14,6 @@ module.exports = {
         'space-before-function-paren': 0, // 函数定义时括号前面要有空格
         'no-console': 'off',
         'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-        'no-unused-vars': 'off',
+        'no-unused-vars': 'off'
     }
 }
