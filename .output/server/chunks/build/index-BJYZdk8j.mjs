@@ -5,7 +5,7 @@ import { hasOwn, NOOP, isObject, isArray, isFunction, isString } from '@vue/shar
 import { E as ElLink, a as ElMessage, u as useAriaProps, g as getEventCode, b as EVENT_CODE, U as UPDATE_MODEL_EVENT, C as CHANGE_EVENT } from './index-COUdoBmy.mjs';
 import { useResizeObserver, useEventListener, isClient } from '@vueuse/core';
 import { ssrRenderAttrs, ssrGetDirectiveProps, ssrRenderComponent, ssrInterpolate } from 'vue/server-renderer';
-import { saveAs } from 'file-saver';
+import FileSaver from 'file-saver';
 import axios from 'axios';
 import '../nitro/nitro.mjs';
 import 'node:http';
@@ -3107,7 +3107,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
         const blob = new Blob([JSON.stringify(docTreeData.value, null, 4)], {
           type: "application/json"
         });
-        saveAs(blob, `${repoName.value}.json`);
+        FileSaver.saveAs(blob, `${repoName.value}.json`);
         ElMessage.success("\u5BFC\u51FA\u6210\u529F~");
       } catch (e) {
         console.log(e);
@@ -3133,7 +3133,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
     const downLoadFile = (res) => {
       const filename = getFilenameFromResponse(res);
-      saveAs(new Blob([res.data]), filename);
+      FileSaver.saveAs(new Blob([res.data]), filename);
     };
     function getFilenameFromResponse(res) {
       const contentDisposition = res.headers["content-disposition"];
@@ -3624,4 +3624,4 @@ _sfc_main.setup = (props, ctx) => {
 };
 
 export { _sfc_main as default };
-//# sourceMappingURL=index-DePaPOl0.mjs.map
+//# sourceMappingURL=index-BJYZdk8j.mjs.map

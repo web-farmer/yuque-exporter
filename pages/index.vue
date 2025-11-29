@@ -69,7 +69,7 @@
 import { Download } from '@element-plus/icons-vue'
 import { ElMessage } from 'element-plus'
 import { onBeforeMount, ref } from 'vue'
-import { saveAs } from 'file-saver'
+import FileSaver from 'file-saver'
 import type { AxiosResponse } from 'axios'
 import request from '~/plugin/request.app'
 import type { IBook, IBookCatalog } from '~/types'
@@ -160,7 +160,7 @@ const handleExportRepoToc = () => {
         const blob = new Blob([JSON.stringify(docTreeData.value, null, 4)], {
             type: 'application/json'
         })
-        saveAs(blob, `${repoName.value}.json`)
+        FileSaver.saveAs(blob, `${repoName.value}.json`)
         ElMessage.success('导出成功~')
     } catch (e) {
         console.log(e)
@@ -191,7 +191,7 @@ const handleExportDocs = async () => {
  */
 const downLoadFile = (res: AxiosResponse) => {
     const filename = getFilenameFromResponse(res)
-    saveAs(new Blob([res.data]), filename)
+    FileSaver.saveAs(new Blob([res.data]), filename)
 }
 
 // 获取文件名
